@@ -12,7 +12,6 @@
     <nav>
       <ul>
         <li><a href="#reviews">Reviews</a></li>
-        <li><a href="#submit">Submit a Review</a></li>
         <li><a href="#about">About</a></li>
       </ul>
     </nav>
@@ -20,24 +19,13 @@
 
   <main>
     <section class="hero">
-      <h1>ToneTested</h1>
+      <h1>Unbiased Guitar Reviews</h1>
       <p>Helping you find your perfect tone.</p>
     </section>
 
     <section id="reviews" class="reviews">
       <h2>Latest Reviews</h2>
       <div id="review-list" class="review-list"></div>
-    </section>
-
-    <section id="submit" class="submit-review">
-      <h2>Submit Your Review</h2>
-      <form id="reviewForm">
-        <input type="text" placeholder="Guitar Model" required id="model"/>
-        <input type="text" placeholder="Brand" required id="brand"/>
-        <input type="number" placeholder="Rating (1-5)" min="1" max="5" required id="rating"/>
-        <textarea placeholder="Your review..." required id="content"></textarea>
-        <button type="submit">Submit</button>
-      </form>
     </section>
 
     <section id="about" class="about">
