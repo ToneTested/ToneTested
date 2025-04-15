@@ -1,134 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Guitar Reviews</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ToneTested - Guitar Reviews</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <h1>Welcome to Tone Tested</h1>
-    <p>Your trusted source for guitar reviews</p>
+    <div class="logo">ToneTested</div>
+    <nav>
+      <ul>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#submit">Submit a Review</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#reviews">Reviews</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
   <main>
-    <div class="review-card">
-      <img src="guitar1.jpg" alt="Guitar Image">
-      <h2>Fender Stratocaster Review</h2>
-      <p>The Fender Stratocaster is a timeless classic...</p>
-    </div>
+    <section class="hero">
+      <h1>Unbiased Guitar Reviews</h1>
+      <p>Helping you find your perfect tone.</p>
+    </section>
 
-    <div class="review-card">
-      <img src="guitar2.jpg" alt="Guitar Image">
-      <h2>Gibson Les Paul Review</h2>
-      <p>The Gibson Les Paul is known for its rich tones...</p>
-    </div>
+    <section id="reviews" class="reviews">
+      <h2>Latest Reviews</h2>
+      <div id="review-list" class="review-list"></div>
+    </section>
+
+    <section id="submit" class="submit-review">
+      <h2>Submit Your Review</h2>
+      <form id="reviewForm">
+        <input type="text" placeholder="Guitar Model" required id="model"/>
+        <input type="text" placeholder="Brand" required id="brand"/>
+        <input type="number" placeholder="Rating (1-5)" min="1" max="5" required id="rating"/>
+        <textarea placeholder="Your review..." required id="content"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About ToneTested</h2>
+      <p>We’re passionate musicians committed to providing honest reviews on the latest guitars and gear in the market.</p>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Tone Tested. All rights reserved.</p>
+    <p>&copy; 2025 ToneTested. All rights reserved.</p>
   </footer>
-  
-  
-  /* General body style */
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f4f4f9;
-  margin: 0;
-  padding: 0;
-  color: #333;
-}
 
-/* Header style */
-header {
-  background-color: #222;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-header h1 {
-  font-size: 2.5rem;
-  margin: 0;
-}
-
-header p {
-  font-size: 1.2rem;
-  margin: 5px 0 0;
-}
-
-/* Navigation bar */
-nav {
-  background-color: #444;
-  overflow: hidden;
-}
-
-nav a {
-  float: left;
-  display: block;
-  color: #fff;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-}
-
-nav a:hover {
-  background-color: #666;
-}
-
-/* Main content area */
-main {
-  padding: 20px;
-  max-width: 1200px;
-  margin: auto;
-}
-
-/* Individual review cards */
-.review-card {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  margin: 20px 0;
-  padding: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.review-card h2 {
-  margin-top: 0;
-  color: #444;
-}
-
-.review-card p {
-  line-height: 1.6;
-}
-
-.review-card img {
-  max-width: 100%;
-  border-radius: 8px;
-  margin-bottom: 15px;
-}
-
-/* Footer */
-footer {
-  background-color: #222;
-  color: #fff;
-  text-align: center;
-  padding: 10px 0;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-}
-  
-  
+  <script src="script.js"></script>
 </body>
 </html>
-
-
