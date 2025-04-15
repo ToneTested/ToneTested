@@ -19,7 +19,7 @@
 
   <main>
     <section class="hero">
-      <h1>Unbiased Guitar Reviews</h1>
+      <h1>ToneTested</h1>
       <p>Helping you find your perfect tone.</p>
     </section>
 
