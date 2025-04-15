@@ -56,6 +56,7 @@ body {
   color: #333;
 }
 
+style.css
 /* Header styles */
 header {
   text-align: center;
