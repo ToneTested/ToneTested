@@ -10,11 +10,16 @@ const reviews = [
     model: "Les Paul Standard",
     rating: 4,
     content: "Heavy, but the tone is unmatched. Great sustain."
+  },
+  {
+    brand: "PRS",
+    model: "Custom 24",
+    rating: 5,
+    content: "Incredible versatility and craftsmanship. Great for any genre."
   }
 ];
 
 const reviewList = document.getElementById("review-list");
-const form = document.getElementById("reviewForm");
 
 function renderReviews() {
   reviewList.innerHTML = "";
@@ -29,17 +34,5 @@ function renderReviews() {
     reviewList.appendChild(card);
   });
 }
-
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
-  const model = document.getElementById("model").value;
-  const brand = document.getElementById("brand").value;
-  const rating = parseInt(document.getElementById("rating").value);
-  const content = document.getElementById("content").value;
-
-  reviews.unshift({ brand, model, rating, content });
-  renderReviews();
-  form.reset();
-});
 
 renderReviews();
