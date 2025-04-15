@@ -36,11 +36,9 @@
   <footer>
     <p>&copy; 2025 Tone Tested. All rights reserved.</p>
   </footer>
-</body>
-</html>
-
-
-/* General body style */
+  
+  
+  /* General body style */
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f4f4f9;
@@ -128,3 +126,9 @@ footer {
   bottom: 0;
   width: 100%;
 }
+  
+  
+</body>
+</html>
+
+
