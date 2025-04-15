@@ -1,4 +1,4 @@
-style.css
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,91 +48,6 @@ style.css
 </html>
 
 
-/* General styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  color: #333;
-}
 
 
-/* Header styles */
-header {
-  text-align: center;
-  background-color: #444;
-  color: white;
-  padding: 1.5rem 0;
-}
 
-header h1 {
-  margin: 0;
-  font-size: 2.5rem;
-}
-
-header p {
-  margin: 0.5rem 0;
-  font-size: 1rem;
-}
-
-/* Navigation styles */
-nav {
-  background-color: #222;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-
-nav ul li {
-  margin: 0;
-}
-
-nav ul li a {
-  display: block;
-  padding: 1rem;
-  color: white;
-  text-decoration: none;
-}
-
-nav ul li a:hover {
-  background-color: #555;
-}
-
-/* Main content styles */
-main {
-  padding: 1rem;
-}
-
-section {
-  margin: 2rem 0;
-}
-
-article {
-  margin-bottom: 1.5rem;
-  padding: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-/* Footer styles */
-footer {
-  text-align: center;
-  background-color: #222;
-  color: white;
-  padding: 1rem 0;
-}
-
-footer a {
-  color: #4CAF50;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
